@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krishna Dental Clinic – Thirumullaivoyal, Chennai</title>
+  <meta name="description" content="Krishna Dental Clinic – Affordable, expert dental care in Thirumullaivoyal, Chennai. Root canals, braces, implants, extractions and more. Rated 4.9★ on Google." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/gallery.css" />
+  <link rel="stylesheet" href="css/booking.css" />
+</head>
+<body>
+
+  <!-- ═══════════════ NAV ═══════════════ -->
+  <nav id="nav">
+    <a href="#home" class="nav-logo">Krishna <span>Dental</span></a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#booking" class="nav-book">Book Appointment</a>
+    <button class="nav-hamburger" id="menuToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#services" class="mm-link">Services</a>
+    <a href="#gallery" class="mm-link">Gallery</a>
+    <a href="#about" class="mm-link">About</a>
+    <a href="#reviews" class="mm-link">Reviews</a>
+    <a href="#contact" class="mm-link">Contact</a>
+    <a href="#booking" class="mm-book">Book Appointment</a>
+  </div>
+
+  <!-- ═══════════════ HERO ═══════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-img" id="heroImg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-grain"></div>
+    <div class="hero-inner">
+      <p class="hero-eyebrow" id="heroEyebrow">
+        <span class="eyebrow-line"></span>
+        Rated 4.9 · 102 Google Reviews · Thirumullaivoyal
+      </p>
+      <h1 class="hero-h1" id="heroH1">
+        Your Smile,<br>
+        <em class="italic">Perfectly</em><br>
+        <span class="outline">Crafted.</span>
+      </h1>
+      <p class="hero-desc" id="heroDesc">
+        Expert dental care with warmth and precision. Root canals, braces,
+        implants, extractions — all under one roof at prices that make sense.
+      </p>
+      <div class="hero-ctas" id="heroCtas">
+        <a href="#booking" class="btn-gold">📅 Book Appointment</a>
+        <a href="tel:09840597779" class="btn-outline-white">📞 Call Now →</a>
+      </div>
+      <div class="hero-trust" id="heroTrust">
+        <div class="trust-item">
+          <div class="trust-num" data-target="4.9">0</div>
+          <div class="trust-label">Google Rating</div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-num" data-target="102">0</div>
+          <div class="trust-label">Happy Reviews</div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-num" data-target="10">0</div>
+          <div class="trust-label">Years of Care</div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-num" data-target="6">0</div>
+          <div class="trust-label">Specialisations</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ RATING STRIP ═══════════════ -->
+  <div class="rating-strip">
+    <span class="rs-stars">★★★★★</span>
+    <span class="rs-text">4.9 / 5.0</span>
+    <span class="rs-divider">|</span>
+    <span class="rs-quote">"Quality treatment with affordable price"</span>
+    <span class="rs-divider">|</span>
+    <span class="rs-text">102 verified reviews on Google</span>
+  </div>
+
+  <!-- ═══════════════ SERVICES ═══════════════ -->
+  <section class="services" id="services">
+    <div class="section-inner">
+      <div class="section-head reveal-up">
+        <span class="label">What We Offer</span>
+        <h2 class="section-title">Complete Dental <em>Care</em></h2>
+        <p class="section-sub">From your first cleaning to full smile transformations — every treatment under one trusted roof.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card reveal-up" style="--delay:0.05s">
+          <div class="sc-img">
+            <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=600&q=80" alt="Root Canal Treatment" loading="lazy" />
+          </div>
+          <div class="sc-body">
+            <div class="sc-icon">🦷</div>
+            <h3 class="sc-name">Root Canal Treatment</h3>
+            <p class="sc-desc">Painless, precision root canal therapy to save your natural tooth and eliminate infection with lasting results.</p>
+            <span class="sc-tag">Most Requested</span>
+          </div>
+        </div>
+
+        <div class="service-card reveal-up" style="--delay:0.1s">
+          <div class="sc-img">
+            <img src="https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=600&q=80" alt="Dental Braces" loading="lazy" />
+          </div>
+          <div class="sc-body">
+            <div class="sc-icon">😁</div>
+            <h3 class="sc-name">Dental Braces</h3>
+            <p class="sc-desc">Orthodontic braces tailored to your bite — for a perfectly aligned, confident smile.</p>
+          </div>
+        </div>
+
+        <div class="service-card reveal-up" style="--delay:0.15s">
+          <div class="sc-img">
+            <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=600&q=80" alt="Teeth Cleaning" loading="lazy" />
+          </div>
+          <div class="sc-body">
+            <div class="sc-icon">✨</div>
+            <h3 class="sc-name">Teeth Cleaning</h3>
+            <p class="sc-desc">Professional scaling and polishing to remove tartar, brighten your smile, and support gum health.</p>
+          </div>
+        </div>
+
+        <div class="service-card reveal-up" style="--delay:0.2s">
+          <div class="sc-img">
+            <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=600&q=80" alt="Dental Implants" loading="lazy" />
+          </div>
+          <div class="sc-body">
+            <div class="sc-icon">🔩</div>
+            <h3 class="sc-name">Implants & Bridge</h3>
+            <p class="sc-desc">Restore missing teeth with natural-looking implants or fixed bridges crafted for function and aesthetics.</p>
+          </div>
+        </div>
+
+        <div class="service-card reveal-up" style="--delay:0.25s">
+          <div class="sc-img">
+            <img src="https://images.unsplash.com/photo-1571772996211-2f02c9727629?auto=format&fit=crop&w=600&q=80" alt="Dental Crown" loading="lazy" />
+          </div>
+          <div class="sc-body">
+            <div class="sc-icon">👑</div>
+            <h3 class="sc-name">Crowns & Caps</h3>
+            <p class="sc-desc">Durable tooth-coloured crowns to protect damaged teeth and restore your natural bite.</p>
+          </div>
+        </div>
+
+        <div class="service-card reveal-up" style="--delay:0.3s">
+          <div class="sc-img">
+            <img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&w=600&q=80" alt="Tooth Extraction" loading="lazy" />
+          </div>
+          <div class="sc-body">
+            <div class="sc-icon">🪥</div>
+            <h3 class="sc-name">Tooth Extraction</h3>
+            <p class="sc-desc">Gentle, safe extractions including wisdom tooth removal — performed with minimal discomfort.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ GALLERY ═══════════════ -->
+  <section class="gallery-section" id="gallery">
+    <div class="section-inner">
+      <div class="section-head reveal-up">
+        <span class="label" style="color:var(--gold-lt)">Our Clinic</span>
+        <h2 class="section-title" style="color:#fff">A Glimpse <em>Inside</em></h2>
+        <p class="section-sub" style="color:rgba(255,255,255,0.5)">Clean, comfortable, and equipped with modern tools for your care.</p>
+      </div>
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-item gi-large reveal-up" style="--delay:0.0s" data-index="0">
+          <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=900&q=80" alt="Dental Chair" loading="lazy" />
+          <div class="gi-overlay"><span>Modern Chair & Equipment</span></div>
+        </div>
+        <div class="gallery-item reveal-up" style="--delay:0.08s" data-index="1">
+          <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=600&q=80" alt="Treatment" loading="lazy" />
+          <div class="gi-overlay"><span>Expert Treatment</span></div>
+        </div>
+        <div class="gallery-item reveal-up" style="--delay:0.14s" data-index="2">
+          <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=600&q=80" alt="Dental Tools" loading="lazy" />
+          <div class="gi-overlay"><span>Sterilised Instruments</span></div>
+        </div>
+        <div class="gallery-item reveal-up" style="--delay:0.2s" data-index="3">
+          <img src="https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=600&q=80" alt="Consultation" loading="lazy" />
+          <div class="gi-overlay"><span>Friendly Consultation</span></div>
+        </div>
+        <div class="gallery-item gi-tall reveal-up" style="--delay:0.26s" data-index="4">
+          <img src="https://images.unsplash.com/photo-1571772996211-2f02c9727629?auto=format&fit=crop&w=600&q=80" alt="Smile Result" loading="lazy" />
+          <div class="gi-overlay"><span>Beautiful Results</span></div>
+        </div>
+        <div class="gallery-item reveal-up" style="--delay:0.32s" data-index="5">
+          <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=600&q=80" alt="Smile" loading="lazy" />
+          <div class="gi-overlay"><span>Happy Patients</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <button class="lb-close" id="lbClose">✕</button>
+      <button class="lb-prev" id="lbPrev">‹</button>
+      <button class="lb-next" id="lbNext">›</button>
+      <div class="lb-img-wrap">
+        <img id="lbImg" src="" alt="" />
+        <p id="lbCaption"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ ABOUT ═══════════════ -->
+  <section class="about" id="about">
+    <div class="section-inner">
+      <div class="about-grid">
+        <div class="about-visual reveal-left">
+          <div class="about-photo-wrap">
+            <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" alt="Doctor at Krishna Dental Clinic" />
+            <div class="about-badge-float">
+              <div class="abf-num">4.9</div>
+              <div class="abf-stars">★★★★★</div>
+              <div class="abf-label">Google Rating</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-text-col reveal-right">
+          <span class="label">About the Clinic</span>
+          <h2 class="section-title">Trusted by Families<br>in <em>Thirumullaivoyal</em></h2>
+          <p class="about-para">Krishna Dental Clinic has been serving the families of Thirumullaivoyal and surrounding areas with high-quality, affordable dental care. Our experienced team believes every patient deserves a thorough examination, honest advice, and personalised treatment.</p>
+          <p class="about-para">From routine cleanings to complex root canals and orthodontic braces, we handle every case with the same attention to detail — making you comfortable throughout your visit.</p>
+          <div class="about-feats">
+            <div class="feat"><span class="feat-icon">💰</span><div><strong>Transparent Pricing</strong><p>No hidden charges. Quality care accessible to every family.</p></div></div>
+            <div class="feat"><span class="feat-icon">🔬</span><div><strong>Modern Equipment</strong><p>Up-to-date tools and sterilisation standards for safe treatment.</p></div></div>
+            <div class="feat"><span class="feat-icon">🩺</span><div><strong>Honest Consultation</strong><p>Clear treatment plans so you always know what to expect.</p></div></div>
+            <div class="feat"><span class="feat-icon">📍</span><div><strong>Easy to Find</strong><p>Ground floor, next to HDFC ATM on Saraswati Nagar Main Rd.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ REVIEWS ═══════════════ -->
+  <section class="reviews-section" id="reviews">
+    <div class="section-inner">
+      <div class="section-head reveal-up">
+        <span class="label">Patient Reviews</span>
+        <h2 class="section-title">What Our Patients <em>Say</em></h2>
+      </div>
+      <div class="reviews-track-wrap">
+        <div class="reviews-track" id="reviewsTrack">
+
+          <div class="review-card">
+            <div class="rc-stars">★★★★★</div>
+            <p class="rc-text">"I got my wisdom teeth removed and replaced yearslong missing teeth using a teeth bridge. Doctors give correct and clear treatment ideas. Best dental services and affordable prices."</p>
+            <div class="rc-author">
+              <div class="rc-avatar">B</div>
+              <div><strong>Bhuvaneswari Srinivasan</strong><span>8 months ago</span></div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="rc-stars">★★★★★</div>
+            <p class="rc-text">"I did root canal treatment, braces treatment and got the cap done. Very satisfied with the treatment and outcomes. Best treatment at affordable price. Thank you Krishna Dental Clinic."</p>
+            <div class="rc-author">
+              <div class="rc-avatar">A</div>
+              <div><strong>Arun M</strong><span>11 months ago</span></div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="rc-stars">★★★★★</div>
+            <p class="rc-text">"Visited for wisdom tooth extraction. Very professional and caring team. Explained every step clearly and made sure I was comfortable throughout the procedure."</p>
+            <div class="rc-author">
+              <div class="rc-avatar">U</div>
+              <div><strong>Uma Mageshwari V</strong><span>5 months ago</span></div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="rc-stars">★★★★★</div>
+            <p class="rc-text">"My upper front tooth broke. Doctors thoroughly checked my teeth and advised root canal treatment and braces. Very satisfied with the treatment outcomes."</p>
+            <div class="rc-author">
+              <div class="rc-avatar">R</div>
+              <div><strong>Ramesh Kumar</strong><span>6 months ago</span></div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="rc-stars">★★★★★</div>
+            <p class="rc-text">"Have been coming here for teeth cleaning for 3 years. Always clean, professional and the staff is so friendly. Highly recommend for the whole family."</p>
+            <div class="rc-author">
+              <div class="rc-avatar">P</div>
+              <div><strong>Priya Venkatesh</strong><span>3 months ago</span></div>
+            </div>
+          </div>
+
+        </div>
+        <button class="rv-arrow rv-prev" id="rvPrev">‹</button>
+        <button class="rv-arrow rv-next" id="rvNext">›</button>
+      </div>
+      <div class="rv-dots" id="rvDots"></div>
+      <div style="text-align:center;margin-top:48px;" class="reveal-up">
+        <a href="https://maps.google.com/?q=Krishna+Dental+Clinic+Thirumullaivoyal" target="_blank" class="btn-teal">View All 102 Reviews on Google ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ BOOKING FORM ═══════════════ -->
+  <section class="booking-section" id="booking">
+    <div class="section-inner">
+      <div class="booking-wrap">
+        <div class="booking-left reveal-left">
+          <span class="label" style="color:var(--gold-lt)">Online Booking</span>
+          <h2 class="section-title" style="color:#fff">Book Your<br><em>Appointment</em></h2>
+          <p style="color:rgba(255,255,255,0.55);font-size:15px;line-height:1.8;margin-top:16px;">Fill in the form and our team will confirm your slot via call within a few hours.</p>
+          <div class="booking-info-cards">
+            <div class="bic"><span>⏰</span><div><strong>Hours</strong><p>10:30 AM – 9:00 PM · Daily</p></div></div>
+            <div class="bic"><span>📞</span><div><strong>Phone</strong><p><a href="tel:09840597779" style="color:var(--gold-lt);text-decoration:none;">098405 97779</a></p></div></div>
+            <div class="bic"><span>📍</span><div><strong>Address</strong><p>3/50 Saraswati Nagar Main Rd,<br>Thirumullaivoyal, Chennai</p></div></div>
+          </div>
+        </div>
+
+        <div class="booking-right reveal-right">
+          <!-- Step indicators -->
+          <div class="steps-bar" id="stepsBar">
+            <div class="step active" data-step="1"><span>1</span>Service</div>
+            <div class="step-line"></div>
+            <div class="step" data-step="2"><span>2</span>Date &amp; Time</div>
+            <div class="step-line"></div>
+            <div class="step" data-step="3"><span>3</span>Your Details</div>
+          </div>
+
+          <!-- Step 1: Service -->
+          <div class="form-step active" id="step1">
+            <h3 class="step-title">Choose a Service</h3>
+            <div class="service-pills" id="servicePills">
+              <label class="pill"><input type="radio" name="service" value="Teeth Cleaning" /><span>✨ Teeth Cleaning</span></label>
+              <label class="pill"><input type="radio" name="service" value="Root Canal Treatment" /><span>🦷 Root Canal</span></label>
+              <label class="pill"><input type="radio" name="service" value="Dental Braces" /><span>😁 Braces</span></label>
+              <label class="pill"><input type="radio" name="service" value="Tooth Extraction" /><span>🪥 Extraction</span></label>
+              <label class="pill"><input type="radio" name="service" value="Implants & Bridge" /><span>🔩 Implants</span></label>
+              <label class="pill"><input type="radio" name="service" value="Crowns & Caps" /><span>👑 Crown / Cap</span></label>
+              <label class="pill"><input type="radio" name="service" value="General Checkup" /><span>🩺 General Checkup</span></label>
+              <label class="pill"><input type="radio" name="service" value="Other" /><span>💬 Other</span></label>
+            </div>
+            <p class="form-error hidden" id="err-service">Please select a service to continue.</p>
+            <button class="btn-step-next" onclick="nextStep(1)">Continue →</button>
+          </div>
+
+          <!-- Step 2: Date & Time -->
+          <div class="form-step" id="step2">
+            <h3 class="step-title">Pick a Date &amp; Time</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Preferred Date</label>
+                <input type="date" id="appointmentDate" class="form-input" />
+                <p class="form-error hidden" id="err-date">Please select a date.</p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Preferred Time Slot</label>
+              <div class="time-slots" id="timeSlots">
+                <button type="button" class="time-slot" data-time="10:30 AM">10:30 AM</button>
+                <button type="button" class="time-slot" data-time="11:30 AM">11:30 AM</button>
+                <button type="button" class="time-slot" data-time="12:30 PM">12:30 PM</button>
+                <button type="button" class="time-slot" data-time="2:00 PM">2:00 PM</button>
+                <button type="button" class="time-slot" data-time="3:30 PM">3:30 PM</button>
+                <button type="button" class="time-slot" data-time="5:00 PM">5:00 PM</button>
+                <button type="button" class="time-slot" data-time="6:30 PM">6:30 PM</button>
+                <button type="button" class="time-slot" data-time="8:00 PM">8:00 PM</button>
+              </div>
+              <p class="form-error hidden" id="err-time">Please select a time slot.</p>
+            </div>
+            <div class="step-nav">
+              <button class="btn-step-back" onclick="prevStep(2)">← Back</button>
+              <button class="btn-step-next" onclick="nextStep(2)">Continue →</button>
+            </div>
+          </div>
+
+          <!-- Step 3: Details -->
+          <div class="form-step" id="step3">
+            <h3 class="step-title">Your Details</h3>
+            <div class="form-row-2">
+              <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" id="patientName" class="form-input" placeholder="e.g. Priya Sharma" />
+                <p class="form-error hidden" id="err-name">Please enter your name.</p>
+              </div>
+              <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" id="patientPhone" class="form-input" placeholder="10-digit mobile number" maxlength="10" />
+                <p class="form-error hidden" id="err-phone">Please enter a valid 10-digit number.</p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Message / Symptoms <span style="color:var(--muted);font-weight:400;">(optional)</span></label>
+              <textarea id="patientMsg" class="form-input form-textarea" placeholder="Describe your concern, e.g. toothache since 3 days..."></textarea>
+            </div>
+
+            <!-- Booking Summary -->
+            <div class="booking-summary" id="bookingSummary"></div>
+
+            <div class="step-nav">
+              <button class="btn-step-back" onclick="prevStep(3)">← Back</button>
+              <button class="btn-submit" id="submitBtn" onclick="submitBooking()">Confirm Appointment ✓</button>
+            </div>
+          </div>
+
+          <!-- Success State -->
+          <div class="form-step" id="stepSuccess">
+            <div class="success-card">
+              <div class="success-icon">✅</div>
+              <h3>Booking Request Sent!</h3>
+              <p id="successMsg"></p>
+              <p class="success-note">Our team will call you to confirm your appointment shortly.</p>
+              <a href="tel:09840597779" class="btn-gold" style="display:inline-flex;margin-top:24px;">📞 Call Us Directly</a>
+              <button class="btn-step-back" onclick="resetForm()" style="display:block;margin:16px auto 0;">Book Another →</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ MAP + CONTACT ═══════════════ -->
+  <section class="contact-section" id="contact">
+    <div class="section-inner">
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <span class="label">Find Us</span>
+          <h2 class="section-title">Hours &amp; <em>Location</em></h2>
+          <div class="ci-rows">
+            <div class="ci-row">
+              <span>📍</span>
+              <div>
+                <strong>Address</strong>
+                <p>Ground Floor, 3/50, Saraswati Nagar Main Rd,<br>Next to HDFC ATM, Thirumullaivoyal,<br>Chennai – 600062</p>
+              </div>
+            </div>
+            <div class="ci-row">
+              <span>📞</span>
+              <div>
+                <strong>Phone</strong>
+                <p><a href="tel:09840597779" style="color:var(--teal);font-weight:600;text-decoration:none;">098405 97779</a></p>
+              </div>
+            </div>
+            <div class="ci-row">
+              <span>🕙</span>
+              <div>
+                <strong>Hours</strong>
+                <p>Monday – Sunday<br>10:30 AM – 9:00 PM</p>
+              </div>
+            </div>
+          </div>
+          <a href="https://maps.google.com/?q=Krishna+Dental+Clinic+Thirumullaivoyal+Chennai" target="_blank" class="btn-teal" style="margin-top:32px;display:inline-flex;">Open in Google Maps ↗</a>
+        </div>
+        <div class="contact-map reveal-right">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3885.014!2d80.13440!3d13.13504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52639c8d0e4a6b%3A0x1c0b2a3f5e7d8c9a!2sKrishna%20Dental%20Clinic!5e0!3m2!1sen!2sin!4v1714000000000"
+            allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Krishna Dental Clinic Location">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">Krishna <span>Dental</span> Clinic</div>
+        <p>Affordable, expert dental care for all of Chennai's families. Quality you can trust, prices that make sense.</p>
+      </div>
+      <div class="footer-links-col">
+        <strong>Quick Links</strong>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About Us</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#booking">Book Appointment</a>
+      </div>
+      <div class="footer-links-col">
+        <strong>Contact</strong>
+        <a href="tel:09840597779">📞 098405 97779</a>
+        <a href="https://maps.google.com/?q=Krishna+Dental+Clinic+Thirumullaivoyal" target="_blank">📍 Get Directions</a>
+        <p style="color:rgba(255,255,255,0.3);font-size:13px;margin-top:8px;">Open Daily · 10:30 AM – 9 PM</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Krishna Dental Clinic, Thirumullaivoyal, Chennai. All rights reserved.</p>
+      <p>3/50 Saraswati Nagar Main Rd · 44JQ+FX Chennai</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp FAB -->
+  <a href="https://wa.me/919840597779?text=Hi%2C%20I%20would%20like%20to%20book%20an%20appointment%20at%20Krishna%20Dental%20Clinic" class="whatsapp-fab" target="_blank" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span>WhatsApp</span>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+  <script src="js/gallery.js" defer></script>
+  <script src="js/booking.js" defer></script>
+</body>
+</html>
